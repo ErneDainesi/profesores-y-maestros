@@ -1,0 +1,26 @@
+{
+  "name": "profesores-y-maestros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./assets/css/sass/main.scss ./assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErneDainesi/profesores-y-maestros.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErneDainesi/profesores-y-maestros/issues"
+  },
+  "homepage": "https://github.com/ErneDainesi/profesores-y-maestros#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "sass": "^1.37.5"
+  }
+}

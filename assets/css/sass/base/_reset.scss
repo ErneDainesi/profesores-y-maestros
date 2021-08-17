@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+body {
+	font-family: $poppins-family;
+	font-weight: $poppins-regular;
+	background-color: $white;
+}
+
