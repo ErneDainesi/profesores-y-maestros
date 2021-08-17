@@ -4,4 +4,71 @@ body {
   background-color: #F6F8FF;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.navbar {
+  opacity: 100%;
+  padding: 0;
+}
+.navbar .container-fluid {
+  padding: 0;
+}
+.navbar .container-fluid .navbar-brand {
+  margin-left: 5rem;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 4rem;
+  color: #F6F8FF;
+}
+
+.header-bg-img {
+  background-image: url("../../../images/home-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+#home .home-info {
+  margin-left: 4rem;
+}
+#home .home-info .header-title {
+  font-size: 4rem;
+}
+#home .home-info .header-title--bold {
+  font-weight: 700;
+}
+#home .home-info .header-sub-title {
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 3rem 0;
+}
+#home .home-img {
+  margin-right: 25rem;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.navbar {
+	opacity: 100%;
+	padding: 0;
+	.container-fluid {
+		padding: 0;
+		.navbar-brand {
+			margin-left: 5rem;
+		}
+	}
+	.navbar-nav {
+		.nav-link {
+			font-size: 1.3rem;
+			font-weight: $poppins-bold;
+			text-transform: uppercase;
+			margin: 0 4rem;
+			color: $white;
+		}
+	}
+}
+
