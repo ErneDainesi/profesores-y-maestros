@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .header-bg-img {
-	background-image: url("../../../images/home-bg.svg");
+	background-image: url('../../images/home-bg.svg');
 	background-repeat: no-repeat;
 	background-position: top right;
 }
