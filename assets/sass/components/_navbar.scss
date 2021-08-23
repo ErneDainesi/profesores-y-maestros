@@ -1,22 +1,35 @@
 @use '../abstracts' as *;
 
 .navbar {
-	opacity: 100%;
-	padding: 0;
-	.container-fluid {
-		padding: 0;
-		.navbar-brand {
-			margin-left: 5rem;
-		}
-	}
+	padding: 1rem 0;
+	width: 100%;
+	background-color: $blue-500;
 	.navbar-nav {
 		.nav-link {
 			font-size: 1.3rem;
 			font-weight: $poppins-bold;
 			text-transform: uppercase;
-			margin: 0 4rem;
 			color: $white;
+			text-align: center;
 		}
+	}
+	&-brand {
+		min-width: 50%;
+		min-height: auto;
 	}
 }
 
+@media screen and (min-width: 992px) {
+	.navbar {
+		background-color: transparent;
+		&-brand {
+			min-width: 15%;
+			max-width: 50%;
+		}
+		.navbar-nav {
+			.nav-link {
+				padding: 0 3rem;
+			}
+		}
+	}
+}

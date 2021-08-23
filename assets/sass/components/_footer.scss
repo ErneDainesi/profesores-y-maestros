@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+footer {
+	background-color: $blue-500;
+	margin-top: 2rem;
+	.footer-logo,
+	.footer-links,
+	.footer-social-media,
+	.footer-time,
+	.footer-contact {
+		color: $white;
+		padding: 1rem 1rem;
+	}
+	.footer-links {
+		.footer-link {
+			color: $white;
+		}
+	}
+	.footer-social-media {
+		.social-media-links {
+			margin-top: 0.5rem;
+		}
+		.social-media-link {
+			color: $white;
+			margin-right: 2.5rem;
+		}
+	}
+}

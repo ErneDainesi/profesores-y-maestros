@@ -2,19 +2,26 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: #F6F8FF;
+  line-height: 1.5;
 }
 
 body,
+html,
 h1,
 h2,
 h3,
 h4,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul, ol {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -23,52 +30,191 @@ img {
 }
 
 .navbar {
-  opacity: 100%;
-  padding: 0;
-}
-.navbar .container-fluid {
-  padding: 0;
-}
-.navbar .container-fluid .navbar-brand {
-  margin-left: 5rem;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: #023E8A;
 }
 .navbar .navbar-nav .nav-link {
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 4rem;
   color: #F6F8FF;
+  text-align: center;
+}
+.navbar-brand {
+  min-width: 50%;
+  min-height: auto;
 }
 
-.header-bg-img {
-  background-image: url("../../images/home-bg.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
+@media screen and (min-width: 992px) {
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar-brand {
+    min-width: 15%;
+    max-width: 50%;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0 3rem;
+  }
+}
+footer {
+  background-color: #023E8A;
+  margin-top: 2rem;
+}
+footer .footer-logo,
+footer .footer-links,
+footer .footer-social-media,
+footer .footer-time,
+footer .footer-contact {
+  color: #F6F8FF;
+  padding: 1rem 1rem;
+}
+footer .footer-links .footer-link {
+  color: #F6F8FF;
+}
+footer .footer-social-media .social-media-links {
+  margin-top: 0.5rem;
+}
+footer .footer-social-media .social-media-link {
+  color: #F6F8FF;
+  margin-right: 2.5rem;
 }
 
 #home {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
-#home .home-info {
-  margin-left: 4rem;
+#home .home-section {
+  margin-top: 2rem;
 }
-#home .home-info .header-title {
-  font-size: 4rem;
+#home .home-section .home-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
-#home .home-info .header-title--bold {
+#home .home-section .home-info .header-title--bold {
   font-weight: 700;
 }
-#home .home-info .header-sub-title {
-  font-size: 1.5rem;
-  width: 60%;
-  margin: 3rem 0;
+#home .home-section .home-info .header-sub-title {
+  font-size: 1rem;
+  margin: 2rem 0;
 }
 #home .home-img {
-  margin-right: 25rem;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .header-bg-img {
+    background-image: url("../images/home-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  #home .home-img {
+    display: block;
+  }
+  #home .home-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #home .home-section .home-info {
+    max-width: 45%;
+    text-align: left;
+  }
+  #home .home-section .home-info .header-title {
+    font-size: 4rem;
+    text-align: left;
+  }
+  #home .home-section .home-info .btn {
+    align-self: flex-start;
+  }
+}
+#services {
+  text-align: center;
+  margin: 4rem 0;
+}
+#services .services-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+}
+#services .services-info .card {
+  margin: 1rem 0;
+}
+#services .services-info .card-body .card-title {
+  font-size: 1.5rem;
+}
+#services .services-info .card-body .card-text {
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-us .teacher-info-img {
+  margin: 1rem 0;
+}
+#about-us .teacher-info-text {
+  font-size: 1rem;
+}
+
+#opinions {
+  text-align: center;
+}
+#opinions .carousel .carousel-inner .carousel-item .carousel-opinion {
+  padding: 3rem;
+  margin-bottom: 1.5rem;
+}
+#opinions .carousel .carousel-inner .carousel-item .carousel-caption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#opinions .carousel .carousel-inner .carousel-item .carousel-caption .carousel-quote {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 0.187rem;
+  width: 1.7rem;
+  margin-right: 1rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+#contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#contact .contact-sub-title {
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
