@@ -32,24 +32,31 @@ img {
 .navbar {
   padding: 1rem 0;
   width: 100%;
-  background-color: #023E8A;
+  background-color: transparent;
 }
 .navbar .navbar-nav .nav-link {
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #F6F8FF;
-  text-align: center;
+  text-align: right;
+}
+.navbar .custom-toggler .fas {
+  color: #F6F8FF;
+  font-size: 2rem;
 }
 .navbar-brand {
-  min-width: 50%;
+  min-width: 30%;
+  max-width: 50%;
   min-height: auto;
 }
 
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
 @media screen and (min-width: 992px) {
-  .navbar {
-    background-color: transparent;
-  }
   .navbar-brand {
     min-width: 15%;
     max-width: 50%;
@@ -89,34 +96,43 @@ footer .footer-social-media .social-media-link {
 }
 #home .home-section {
   margin-top: 2rem;
+  padding: 1rem;
 }
 #home .home-section .home-info {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   width: 100%;
+}
+#home .home-section .home-info .header-title {
+  font-size: 1.5rem;
+  max-width: 80%;
+  text-align: left;
+  margin-bottom: 0;
 }
 #home .home-section .home-info .header-title--bold {
   font-weight: 700;
 }
 #home .home-section .home-info .header-sub-title {
-  font-size: 1rem;
-  margin: 2rem 0;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  max-width: 80%;
 }
 #home .home-img {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
-  .header-bg-img {
-    background-image: url("../images/home-bg.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-  }
+.header-bg-img {
+  background-image: url("../images/home-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top -35% right;
+  background-size: 16rem;
+}
 
+@media screen and (min-width: 992px) {
   #home .home-img {
     display: block;
   }
@@ -137,26 +153,50 @@ footer .footer-social-media .social-media-link {
   #home .home-section .home-info .btn {
     align-self: flex-start;
   }
+
+  .header-bg-img {
+    background-size: auto;
+  }
 }
 #services {
   text-align: center;
   margin: 4rem 0;
 }
 #services .services-info {
+  align-items: stretch;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 #services .services-info .card {
-  margin: 1rem 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 80%;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#services .services-info .card-body {
+  display: flex;
+  flex-direction: column;
+}
+#services .services-info .card-body .card-title,
+#services .services-info .card-body .card-text {
+  text-align: left;
 }
 #services .services-info .card-body .card-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 #services .services-info .card-body .card-text {
   font-size: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2rem;
+}
+#services .services-info .card-body .btn {
+  margin-top: auto;
+  align-self: center;
 }
 
 .title {

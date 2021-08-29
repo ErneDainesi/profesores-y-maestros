@@ -1,20 +1,40 @@
+@use '../abstracts/' as *;
+
 #services {
 	text-align: center;
 	margin: 4rem 0;
 	.services-info {
+		align-items: stretch;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: space-around;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
 		.card {
-			margin: 1rem 0;
+			flex-grow: 0;
+			flex-shrink: 0;
+			max-width: 80%;
+			margin: 0 1rem;
+			border-radius: 1rem;
+			padding: 1rem;
 			&-body {
+				display: flex;
+				flex-direction: column;
+				.card-title,
+				.card-text {
+					text-align: left;
+				}
 				.card-title {
-					font-size: 1.5rem;
+					font-size: 1rem;
+					font-weight: $poppins-medium;
 				}
 				.card-text {
 					font-size: 0.8rem;
-					margin-bottom: 0.8rem;
+					margin-bottom: 2rem;
+				}
+				.btn {
+					margin-top: auto;
+					align-self: center;
 				}
 			}
 		}
