@@ -94,6 +94,9 @@ footer .footer-social-media .social-media-link {
   justify-content: center;
   align-items: center;
 }
+#home .title {
+  margin-left: 0;
+}
 #home .home-section {
   margin-top: 2rem;
   padding: 1rem;
@@ -169,6 +172,7 @@ footer .footer-social-media .social-media-link {
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
+  padding: 1rem;
 }
 #services .services-info .card {
   flex-grow: 0;
@@ -187,11 +191,11 @@ footer .footer-social-media .social-media-link {
   text-align: left;
 }
 #services .services-info .card-body .card-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 #services .services-info .card-body .card-text {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 2rem;
 }
 #services .services-info .card-body .btn {
@@ -202,19 +206,30 @@ footer .footer-social-media .social-media-link {
 .title {
   margin-bottom: 1.5rem;
   font-size: 1.7rem;
-  text-align: center;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 #about-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 #about-us .teacher-info-img {
   margin: 1rem 0;
+  box-shadow: 0 5px 15px gray;
+  width: 40%;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+#about-us .teacher-info-img img {
+  border-radius: 2rem;
 }
 #about-us .teacher-info-text {
   font-size: 1rem;
+  padding: 1rem;
+  opacity: 0.8;
 }
 
 #opinions {
@@ -243,18 +258,29 @@ footer .footer-social-media .social-media-link {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   width: 100%;
 }
 #contact .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+#contact .contact-form .btn {
+  align-self: flex-end;
+  width: 40%;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #023E8A;
+  border-color: #023E8A;
+}
+#contact .contact-form .mb-3 .form-control {
+  border: 1px solid #023E8A;
 }
 #contact .contact-sub-title {
   font-size: 0.7rem;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

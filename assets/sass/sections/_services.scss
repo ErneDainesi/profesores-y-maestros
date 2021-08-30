@@ -10,6 +10,7 @@
 		flex-wrap: nowrap;
 		overflow-x: auto;
 		overflow-y: hidden;
+		padding: 1rem;
 		.card {
 			flex-grow: 0;
 			flex-shrink: 0;
@@ -25,11 +26,11 @@
 					text-align: left;
 				}
 				.card-title {
-					font-size: 1rem;
+					font-size: 1.2rem;
 					font-weight: $poppins-medium;
 				}
 				.card-text {
-					font-size: 0.8rem;
+					font-size: 0.9rem;
 					margin-bottom: 2rem;
 				}
 				.btn {
