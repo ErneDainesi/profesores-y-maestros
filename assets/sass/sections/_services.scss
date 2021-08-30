@@ -17,7 +17,6 @@
 			max-width: 80%;
 			margin: 0 1rem;
 			border-radius: 1rem;
-			padding: 1rem;
 			&-body {
 				display: flex;
 				flex-direction: column;
@@ -36,6 +35,8 @@
 				.btn {
 					margin-top: auto;
 					align-self: center;
+					background: linear-gradient(45deg, $blue-400, $blue-500);
+					border-color: transparent;
 				}
 			}
 		}

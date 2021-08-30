@@ -33,6 +33,10 @@
 				margin: 1rem 0;
 				max-width: 80%;
 			}
+			.btn {
+				background: linear-gradient(45deg, $blue-400, $blue-500);
+				border-color: transparent;
+			}
 		}
 	}
 	.home-img {
