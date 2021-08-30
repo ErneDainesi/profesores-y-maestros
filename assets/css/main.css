@@ -29,6 +29,11 @@ img {
   display: block;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 .navbar {
   padding: 1rem 0;
   width: 100%;
@@ -223,6 +228,11 @@ footer .footer-contact {
     background-size: auto;
   }
 }
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 #services {
   text-align: center;
   margin: 4rem 0;

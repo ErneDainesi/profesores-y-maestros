@@ -1,6 +1,5 @@
 @use '../abstracts/' as *;
 
-
 body {
 	font-family: $poppins-family;
 	font-weight: $poppins-regular;
@@ -30,4 +29,9 @@ a {
 img {
 	max-width: 100%;
 	display: block;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
 }
