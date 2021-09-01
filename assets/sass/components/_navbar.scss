@@ -9,16 +9,18 @@
 			font-size: 1.3rem;
 			font-weight: $poppins-bold;
 			text-transform: uppercase;
-			color: $white;
-			text-align: right;
+			text-align: center;
+			margin-bottom: 2rem;
 		}
 	}
+
 	.custom-toggler {
 		.fas {
 			color: $white;
 			font-size: 2rem;
 		}
 	}
+
 	&-brand {
 		min-width: 30%;
 		max-width: 50%;
@@ -33,7 +35,24 @@
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px){
+	.navbar {
+		.navbar-nav {
+			background-color: $white;
+			z-index: 1041;
+			position: absolute;
+			padding: 5rem;
+			right: 0;
+			top: 0;
+			.nav-link {
+				color: $blue-500;
+			}
+		}
+	}
+	
+}
+
+@media screen and (min-width: 993px) {
 	.navbar {
 		&-brand {
 			min-width: 15%;
@@ -42,6 +61,7 @@
 		.navbar-nav {
 			.nav-link {
 				padding: 0 3rem;
+				color: $white;
 			}
 		}
 	}

@@ -31,6 +31,7 @@ img {
 
 ::-webkit-scrollbar {
   display: none;
+  width: 0;
 }
 
 .navbar {
@@ -42,8 +43,8 @@ img {
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #F6F8FF;
-  text-align: right;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .navbar .custom-toggler .fas {
   color: #F6F8FF;
@@ -60,13 +61,27 @@ img {
   border-color: transparent;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
+  .navbar .navbar-nav {
+    background-color: #F6F8FF;
+    z-index: 1041;
+    position: absolute;
+    padding: 5rem;
+    right: 0;
+    top: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #023E8A;
+  }
+}
+@media screen and (min-width: 993px) {
   .navbar-brand {
     min-width: 15%;
     max-width: 50%;
   }
   .navbar .navbar-nav .nav-link {
     padding: 0 3rem;
+    color: #F6F8FF;
   }
 }
 footer {
@@ -227,11 +242,6 @@ footer .footer-contact {
     background-size: auto;
   }
 }
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
 #services {
   text-align: center;
   margin: 4rem 0;
