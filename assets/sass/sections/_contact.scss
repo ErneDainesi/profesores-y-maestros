@@ -12,7 +12,6 @@
 		padding: 1rem;
 		.btn {
 			align-self: flex-end;
-			max-width: 30%;
 			text-transform: uppercase;
 			font-weight: $poppins-medium;
 			background: linear-gradient(45deg, $blue-400, $blue-500);
@@ -23,10 +22,38 @@
 				border: 1px solid $blue-500;
 			}
 		}
+		textarea {
+			height: 15em;
+		}
 	}
 	.contact-sub-title {
 		font-size: 0.7rem;
 		text-align: left;
 		margin-left: 1rem;
+	}
+}
+
+@media screen and (min-width: 993px) {
+	#contact {
+		padding: 5rem;
+		.contact-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			.contact-form {
+				max-width: 30%;
+				.btn {
+					text-align: center;
+					padding: 0.6rem 4rem;
+				}
+			}
+			.contact-text {
+				width: 40%;
+				&-sub-title {
+					font-size: 2rem;
+				}
+			}
+		}
 	}
 }

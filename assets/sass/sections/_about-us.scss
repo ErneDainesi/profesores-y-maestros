@@ -2,7 +2,7 @@
 	margin-bottom: 1.5rem;
 	font-size: 1.7rem;
 	text-align: left;
-	margin-left: 1rem;
+	opacity: .8;
 }
 
 #about-us {
@@ -25,6 +25,32 @@
 			font-size: 1rem;
 			padding: 1rem;
 			opacity: 0.8;
+		}
+	}
+}
+
+@media screen and (min-width: 993px) {
+	#about-us {
+		.teacher-container {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-around;
+			.teacher-info {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				&-text {
+					max-width: 40%;
+				}
+				&-img {
+						border-radius: 50%;
+						margin-bottom: 2rem;
+					img {
+						border-radius: 50%;
+					}
+				}
+			}
 		}
 	}
 }
