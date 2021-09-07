@@ -1,14 +1,16 @@
 @use '../abstracts/' as *;
 
-footer {
-	background-color: $blue-500;
+.footer {
+	background-image: url("../images/footer-bg.svg");
+	background-repeat: no-repeat;
+	background-size: 55rem;
 	margin-top: 2rem;
+	background-position: top center;
+	height: 50vh;
 	font-size: 0.5rem;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
-	padding: 2rem 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
 	.footer-logo,
 	.footer-links,
 	.footer-social-media,
@@ -22,9 +24,9 @@ footer {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		align-self: flex-start;
+		padding-left: .5rem;
 		&-logo {
-			max-width: 90%;
+			min-width: 90%;
 		}
 		&-contact {
 			color: $white;
@@ -32,7 +34,16 @@ footer {
 		&-social-media {
 			display: block;
 			color: $white;
+			white-space: nowrap;
+			p {
+				font-size: .8rem;
+				text-align: center;
+			}
 			.social-media-links {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
 				.social-media-link {
 					color: $white;
 				}
@@ -56,13 +67,18 @@ footer {
 	}
 	.footer-links,
 	.footer-time {
-		align-self: flex-start;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		bottom: 0;
 		margin: 0 1rem;
-		h4 {
-			margin-bottom: 2rem;
-		}
 	}
 	.footer-time {
+		white-space: nowrap;
+		h4 {
+			margin-top: 2rem;
+		}
 		p {
 			margin: 0.5rem 0;
 		}
@@ -74,15 +90,55 @@ footer {
 
 @media screen and (min-width: 992px) {
 	footer {
+		align-items: flex-start;
+		padding: 5rem;
 		.footer-mobile {
 			display: none;
 		}
 		.footer-logo,
-		.footer-contact {
+		.footer-contact,
+		.footer-social-media {
 			display: block;
 		}
-		.footer-logo {
-			max-width: 25%;
+
+		.footer-social-media {
+			.footer-logo {
+				min-width: 100%;
+			}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1.5rem;
+		}
+		.social-media-links {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			.social-media-link {
+				color: $white;
+				font-size: 1rem;
+			}
+		}
+
+		.footer-links {
+			.footer-link {
+				font-size: 1rem;
+			}
+		}
+		.footer-time {
+			font-size: 1rem;
+		}
+		.footer-contact {
+			h4 {
+				margin-bottom: 1rem;
+			}
+			font-size: 1rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
 		}
 	}
 }

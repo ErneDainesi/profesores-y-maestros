@@ -1,23 +1,22 @@
 #opinions {
 	text-align: center;
-	.carousel {
-		.carousel-inner {
-			.carousel-item {
-				.carousel-opinion {
-					padding: 3rem;
-					margin-bottom: 1.5rem;
-				}
-				.carousel-caption {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					justify-content: center;
-					.carousel-quote {
-						display: inline-block;
-						background-color: rgba(black, 0.55);
-						height: 0.187rem;
-						width: 1.7rem;
-						margin-right: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+	#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon,
+	#carouselExampleDark > button.carousel-control-prev > span.carousel-control-prev-icon {
+		display: none;
+	}	
+	#opinions {
+		.carousel {
+			.carousel-inner {
+				padding: 2rem 0;
+				.carousel-item {
+					.opinions-quote {
+						p {
+							opacity: .8;
+							margin-bottom: 1rem;
+						}
 					}
 				}
 			}
