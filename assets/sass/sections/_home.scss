@@ -38,7 +38,7 @@
 			}
 
 			.btn {
-				background: linear-gradient(45deg, $blue-400, $blue-500);
+				background: $blue-btn-gradient;
 				border-color: transparent;
 				text-transform: uppercase;
 				font-weight: $poppins-bold;

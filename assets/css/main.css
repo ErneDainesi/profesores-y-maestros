@@ -205,7 +205,7 @@ footer .footer-contact {
   opacity: 0.5;
 }
 #home .home-section .home-info .btn {
-  background: linear-gradient(45deg, #0077B6, #023E8A);
+  background: linear-gradient(90deg, #051477, #040BCF);
   border-color: transparent;
   text-transform: uppercase;
   font-weight: 700;
@@ -296,7 +296,7 @@ footer .footer-contact {
 #services .services-info .card-body .btn {
   margin-top: auto;
   align-self: center;
-  background: linear-gradient(45deg, #0077B6, #023E8A);
+  background: linear-gradient(90deg, #051477, #040BCF);
   border-color: transparent;
 }
 
@@ -336,11 +336,11 @@ footer .footer-contact {
   margin: 1rem 0;
   box-shadow: 0 5px 15px gray;
   width: 40%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin: 0 auto;
 }
 #about-us .teacher-info-img img {
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 #about-us .teacher-info-text {
   font-size: 1rem;
@@ -350,10 +350,8 @@ footer .footer-contact {
 
 @media screen and (min-width: 993px) {
   #about-us .teacher-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   #about-us .teacher-container .teacher-info {
     display: flex;
@@ -361,7 +359,8 @@ footer .footer-contact {
     align-items: center;
   }
   #about-us .teacher-container .teacher-info-text {
-    max-width: 40%;
+    max-width: 50%;
+    font-size: 1.3rem;
   }
   #about-us .teacher-container .teacher-info-img {
     border-radius: 50%;
@@ -408,7 +407,7 @@ footer .footer-contact {
   align-self: flex-end;
   text-transform: uppercase;
   font-weight: 500;
-  background: linear-gradient(45deg, #0077B6, #023E8A);
+  background: linear-gradient(90deg, #051477, #040BCF);
   border-color: transparent;
 }
 #contact .contact-form .mb-3 .form-control {

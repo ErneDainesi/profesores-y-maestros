@@ -14,7 +14,7 @@
 			align-self: flex-end;
 			text-transform: uppercase;
 			font-weight: $poppins-medium;
-			background: linear-gradient(45deg, $blue-400, $blue-500);
+			background: $blue-btn-gradient;
 			border-color: transparent;
 		}
 		.mb-3 {
