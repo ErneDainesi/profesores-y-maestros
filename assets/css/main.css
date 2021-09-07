@@ -88,8 +88,8 @@ img {
   background-image: url("../images/footer-bg.svg");
   background-repeat: no-repeat;
   background-size: 55rem;
-  margin-top: 2rem;
   background-position: top center;
+  margin-top: 2rem;
   height: 50vh;
   font-size: 0.5rem;
   display: grid;
@@ -172,54 +172,67 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
-  footer {
+@media screen and (min-width: 993px) {
+  .footer {
+    background-size: 130rem;
     align-items: flex-start;
     padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  footer .footer-mobile {
+  .footer .footer-mobile {
     display: none;
   }
-  footer .footer-logo,
-footer .footer-contact,
-footer .footer-social-media {
+  .footer .footer-logo,
+.footer .footer-contact,
+.footer .footer-social-media {
     display: block;
   }
-  footer .footer-social-media {
+  .footer .footer-social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
   }
-  footer .footer-social-media .footer-logo {
+  .footer .footer-social-media .footer-logo {
     min-width: 100%;
   }
-  footer .social-media-links {
+  .footer .social-media-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  footer .social-media-links .social-media-link {
+  .footer .social-media-links .social-media-link {
     color: #F6F8FF;
     font-size: 1rem;
   }
-  footer .footer-links .footer-link {
+  .footer .footer-links .footer-link {
     font-size: 1rem;
   }
-  footer .footer-time {
+  .footer .footer-time {
     font-size: 1rem;
   }
-  footer .footer-contact {
+  .footer .footer-contact {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  footer .footer-contact h4 {
+  .footer .footer-contact h4 {
     margin-bottom: 1rem;
+  }
+  .footer .footer-social-media,
+.footer .footer-links,
+.footer .footer-time {
+    margin-top: 8rem;
+  }
+  .footer .footer-contact {
+    margin-top: 4rem;
   }
 }
 #home {
