@@ -5,31 +5,33 @@
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	.contact-form {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 1rem;
-		.btn {
-			align-self: flex-end;
-			text-transform: uppercase;
-			font-weight: $poppins-medium;
-			background: $blue-btn-gradient;
-			border-color: transparent;
-		}
-		.mb-3 {
-			.form-control {
-				border: 1px solid $blue-500;
+	.contact-container {
+		.contact-form {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			padding: 1rem;
+			.btn {
+				align-self: flex-end;
+				text-transform: uppercase;
+				font-weight: $poppins-medium;
+				background: $blue-btn-gradient;
+				border-color: transparent;
+			}
+			.mb-3 {
+				.form-control {
+					border: 1px solid $blue-500;
+				}
+			}
+			textarea {
+				height: 15em;
 			}
 		}
-		textarea {
-			height: 15em;
+		.contact-text {
+			&-sub-title {
+				margin-left: 1rem;
+			}
 		}
-	}
-	.contact-sub-title {
-		font-size: 0.7rem;
-		text-align: left;
-		margin-left: 1rem;
 	}
 }
 

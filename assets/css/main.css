@@ -34,6 +34,15 @@ img {
   width: 0;
 }
 
+.title {
+  opacity: 0.8;
+  margin-left: 1rem;
+}
+
+section {
+  margin: 5rem 0;
+}
+
 .navbar {
   padding: 1rem 0;
   width: 100%;
@@ -261,8 +270,7 @@ img {
   font-size: 1.5rem;
   max-width: 80%;
   text-align: left;
-  margin-bottom: 0;
-  opacity: 0.8;
+  margin-left: 0;
 }
 #home .home-section .home-info .header-title--bold {
   font-weight: 700;
@@ -329,8 +337,7 @@ img {
   }
 }
 #services {
-  text-align: center;
-  margin: 4rem 0;
+  margin-top: 0;
 }
 #services .services-info {
   align-items: stretch;
@@ -390,30 +397,25 @@ img {
     align-self: flex-end;
   }
 }
-.title {
-  margin-bottom: 1.5rem;
-  font-size: 1.7rem;
-  text-align: left;
-  opacity: 0.8;
-}
-
 #about-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 2rem;
 }
-#about-us .teacher-info-img {
+#about-us .about-us-title {
+  margin-bottom: 4rem;
+}
+#about-us .teacher-container .teacher-info-img {
   margin: 1rem 0;
   box-shadow: 0 5px 15px gray;
   width: 40%;
   border-radius: 1rem;
   margin: 0 auto;
 }
-#about-us .teacher-info-img img {
+#about-us .teacher-container .teacher-info-img img {
   border-radius: 1rem;
 }
-#about-us .teacher-info-text {
+#about-us .teacher-container .teacher-info-text {
   font-size: 1rem;
   padding: 1rem;
   opacity: 0.8;
@@ -441,7 +443,7 @@ img {
     border-radius: 50%;
   }
 }
-#opinions {
+#opinions .carousel .carousel-inner {
   text-align: center;
 }
 
@@ -465,28 +467,26 @@ img {
   justify-content: center;
   width: 100%;
 }
-#contact .contact-form {
+#contact .contact-container .contact-form {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 1rem;
 }
-#contact .contact-form .btn {
+#contact .contact-container .contact-form .btn {
   align-self: flex-end;
   text-transform: uppercase;
   font-weight: 500;
   background: linear-gradient(90deg, #051477, #040BCF);
   border-color: transparent;
 }
-#contact .contact-form .mb-3 .form-control {
+#contact .contact-container .contact-form .mb-3 .form-control {
   border: 1px solid #023E8A;
 }
-#contact .contact-form textarea {
+#contact .contact-container .contact-form textarea {
   height: 15em;
 }
-#contact .contact-sub-title {
-  font-size: 0.7rem;
-  text-align: left;
+#contact .contact-container .contact-text-sub-title {
   margin-left: 1rem;
 }
 

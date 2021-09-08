@@ -1,5 +1,9 @@
 #opinions {
-	text-align: center;
+	.carousel {
+		.carousel-inner {
+			text-align: center;
+		}
+	}
 }
 
 @media screen and (max-width: 992px) {
