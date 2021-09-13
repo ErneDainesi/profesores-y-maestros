@@ -27,6 +27,9 @@ navBar.addEventListener("click", e => {
 	}
 });
 
-if (screen.width >= 993) {
-	navBar.style.visibility = "visible";
-}
+window.addEventListener('resize', () => {
+	if (screen.width >= 993) {
+		navBar.style.visibility = "visible";
+	}
+});
+
