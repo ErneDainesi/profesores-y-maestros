@@ -1,4 +1,5 @@
 const navBar = document.querySelector("#navbarNavAltMarkup");
+const mobileNavBar = document.querySelector(".navbar-nav");
 
 const closeMobileNavbar = () => {
 	const offCanvasBackdrop = document.querySelector(".offcanvas-backdrop");
@@ -24,6 +25,14 @@ navBar.addEventListener("click", e => {
 		closeMobileNavbar();
 	} else if (screen.width > 992 && !target.classList.contains("selected")) {
 		changeSelectedNavLink(target);
+	}
+});
+
+mobileNavBar.addEventListener("click", e => {
+	if (screen.width <= 992
+		&& !e.target.classList.contains("selected")
+		&& e.target.classList.contains("nav-link")) {
+		changeSelectedNavLink(e.target);
 	}
 });
 
