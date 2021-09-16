@@ -136,7 +136,7 @@ section {
 .footer {
   background-image: url("../images/footer-bg.svg");
   background-repeat: no-repeat;
-  background-size: 55rem;
+  background-size: 60rem;
   background-position: top center;
   margin-top: 2rem;
   height: 50vh;
@@ -221,9 +221,14 @@ section {
   display: none;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 768px) and (max-width: 993px) {
   .footer {
-    background-size: 130rem;
+    background-size: 80rem;
+  }
+}
+@media screen and (min-width: 994px) {
+  .footer {
+    background-size: 100rem;
     align-items: flex-start;
     padding: 5rem;
     display: flex;
@@ -282,6 +287,16 @@ section {
   }
   .footer .footer-contact {
     margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 1386px) {
+  .footer {
+    background-size: 120rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .footer {
+    background-size: 140rem;
   }
 }
 #home {
