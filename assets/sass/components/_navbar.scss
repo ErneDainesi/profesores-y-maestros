@@ -47,7 +47,9 @@
 				color: $blue-500;
 				margin-bottom: 1rem;
 			}
-
+			.selected {
+				border-bottom: 3px solid $blue-500;
+			}
 		}
 	}
 	
@@ -62,10 +64,12 @@
 		.navbar-nav {
 			.nav-link {
 				padding: 0 3rem;
+				margin: 0 1rem;
 				color: $white;
 				position: relative;
 			}
-			.nav-link::after {
+			.nav-link::after,
+			.selected::after {
 				content: "";
 				position: absolute;
 				background-color: $white;
@@ -80,6 +84,9 @@
 			}
 			.nav-link:hover {
 				color: $white;
+			}
+			.selected::after {
+				width: 100%;
 			}
 		}
 	}
