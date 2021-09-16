@@ -34,7 +34,7 @@
 	}
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
 	.navbar {
 		.navbar-nav {
 			background-color: $white;
@@ -55,7 +55,7 @@
 	
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
 	.navbar {
 		&-brand {
 			min-width: 15%;
@@ -87,6 +87,17 @@
 			}
 			.selected::after {
 				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1480px){
+	.navbar {
+		.navbar-nav {
+			.nav-link {
+				margin: 0 .5rem;
+				padding: 0 1.5rem;
 			}
 		}
 	}

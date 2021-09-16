@@ -78,7 +78,7 @@ section {
   border-color: transparent;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .navbar .navbar-nav {
     background-color: #F6F8FF;
     z-index: 1041;
@@ -95,7 +95,7 @@ section {
     border-bottom: 3px solid #023E8A;
   }
 }
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   .navbar-brand {
     min-width: 15%;
     max-width: 50%;
@@ -125,6 +125,12 @@ section {
   }
   .navbar .navbar-nav .selected::after {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1480px) {
+  .navbar .navbar-nav .nav-link {
+    margin: 0 0.5rem;
+    padding: 0 1.5rem;
   }
 }
 .footer {
@@ -301,7 +307,7 @@ section {
   width: 100%;
 }
 #home .home-section .home-info .header-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 5rem);
   max-width: 80%;
   text-align: left;
   margin-left: 0;
@@ -311,7 +317,7 @@ section {
   display: inline-block;
 }
 #home .home-section .home-info .header-sub-title {
-  font-size: 0.8rem;
+  font-size: clamp(.8rem, 3vw, 1.5rem);
   margin: 1rem 0;
   max-width: 80%;
   opacity: 0.5;
@@ -333,7 +339,7 @@ section {
   background-size: 16rem;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
   #home {
     padding: 3rem;
   }
@@ -350,16 +356,12 @@ section {
     text-align: left;
   }
   #home .home-section .home-info .header-title {
-    font-size: 5rem;
     text-align: left;
   }
   #home .home-section .home-info .btn {
     align-self: flex-start;
     padding: 0.8rem 5rem;
     border-radius: 0.5rem;
-  }
-  #home .home-section .home-info .header-sub-title {
-    font-size: 1.5rem;
   }
   #home .home-section .home-img {
     min-width: 40%;
@@ -368,6 +370,12 @@ section {
   .header-bg-img {
     background-position: top right;
     background-size: auto;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1480px) {
+  .header-bg-img {
+    background-position: top right;
+    background-size: clamp(51rem, 5vw, 65rem);
   }
 }
 #services {
@@ -412,6 +420,21 @@ section {
   border-color: transparent;
 }
 
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  #services .services-info .card {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  #services .services-info .card {
+    max-width: 55%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #services .services-info .card {
+    max-width: 40%;
+  }
+}
 @media screen and (min-width: 993px) {
   #services .services-title {
     margin-bottom: 10rem;
@@ -422,11 +445,16 @@ section {
     justify-content: space-evenly;
   }
   #services .services-info .card {
-    max-width: 20%;
+    max-width: 27%;
     margin: 1rem 0;
   }
   #services .services-info .card-body .btn {
     align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #services .services-info .card {
+    max-width: 20%;
   }
 }
 #about-us {

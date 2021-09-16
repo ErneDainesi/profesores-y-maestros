@@ -42,6 +42,37 @@
 	}
 }
 
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+	#services {
+		.services-info {
+			.card {
+				max-width: 70%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+	#services {
+		.services-info {
+			.card {
+				max-width: 55%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+	#services {
+		.services-info {
+			.card {
+				max-width: 40%;
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 993px) {
 	#services {
 		.services-title {
@@ -52,13 +83,23 @@
 			padding: 0;
 			justify-content: space-evenly;
 			.card {
-				max-width: 20%;
+				max-width: 27%;
 				margin: 1rem 0;
 				&-body {
 					.btn {
 						align-self: flex-end;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	#services {
+		.services-info {
+			.card {
+				max-width: 20%;
 			}
 		}
 	}
