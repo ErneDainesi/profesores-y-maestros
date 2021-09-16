@@ -45,6 +45,7 @@ img {
 .title {
   opacity: 0.8;
   margin-left: 1rem;
+  font-size: clamp(1.5rem, 1rem + 10vw, 3rem);
 }
 
 section {
@@ -90,6 +91,9 @@ section {
     color: #023E8A;
     margin-bottom: 1rem;
   }
+  .navbar .navbar-nav .selected {
+    border-bottom: 3px solid #023E8A;
+  }
 }
 @media screen and (min-width: 993px) {
   .navbar-brand {
@@ -98,10 +102,12 @@ section {
   }
   .navbar .navbar-nav .nav-link {
     padding: 0 3rem;
+    margin: 0 1rem;
     color: #F6F8FF;
     position: relative;
   }
-  .navbar .navbar-nav .nav-link::after {
+  .navbar .navbar-nav .nav-link::after,
+.navbar .navbar-nav .selected::after {
     content: "";
     position: absolute;
     background-color: #F6F8FF;
@@ -116,6 +122,9 @@ section {
   }
   .navbar .navbar-nav .nav-link:hover {
     color: #F6F8FF;
+  }
+  .navbar .navbar-nav .selected::after {
+    width: 100%;
   }
 }
 .footer {
@@ -405,8 +414,6 @@ section {
 
 @media screen and (min-width: 993px) {
   #services .services-title {
-    font-size: 3rem;
-    opacity: 0.8;
     margin-bottom: 10rem;
   }
   #services .services-info {
@@ -516,9 +523,6 @@ section {
 }
 
 @media screen and (min-width: 993px) {
-  #contact {
-    padding: 5rem;
-  }
   #contact .contact-container {
     display: flex;
     flex-direction: row;
