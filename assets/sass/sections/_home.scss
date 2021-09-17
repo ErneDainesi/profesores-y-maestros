@@ -89,7 +89,14 @@
 	}
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1450px) {
+
+@media screen and (min-width: 500px) and (max-width: 992px) {
+	.header-bg-img {
+		background-size: clamp(18rem, 1rem + 5vw, 30rem);
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1450px) {
 	.header-bg-img {
 		background-position: top right;
 		background-size: clamp(45rem, 5vw, 75rem);
