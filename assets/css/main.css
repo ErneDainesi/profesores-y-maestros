@@ -127,10 +127,10 @@ section {
     width: 100%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1480px) {
+@media screen and (min-width: 1024px) and (max-width: 1450px) {
   .navbar .navbar-nav .nav-link {
     margin: 0 0.5rem;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 }
 .footer {
@@ -157,6 +157,8 @@ section {
 .footer .footer-mobile {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding-left: 0.5rem;
 }
@@ -224,6 +226,12 @@ section {
 @media screen and (min-width: 768px) and (max-width: 993px) {
   .footer {
     background-size: 80rem;
+  }
+  .footer .footer-mobile-social-media, .footer .footer-mobile p {
+    font-size: 1rem;
+  }
+  .footer-links, .footer-time {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 994px) {
@@ -387,10 +395,15 @@ section {
     background-size: auto;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1480px) {
+@media screen and (min-width: 1024px) and (max-width: 1450px) {
   .header-bg-img {
     background-position: top right;
-    background-size: clamp(51rem, 5vw, 65rem);
+    background-size: clamp(45rem, 5vw, 75rem);
+  }
+}
+@media screen and (min-width: 1451px) {
+  .header-bg-img {
+    background-size: auto;
   }
 }
 #services {

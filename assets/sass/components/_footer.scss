@@ -23,6 +23,8 @@
 	.footer-mobile {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		gap: 1rem;
 		padding-left: .5rem;
 		&-logo {
@@ -92,6 +94,15 @@
 @media screen and (min-width: 768px) and (max-width: 993px){
 	.footer {
 		background-size: 80rem;
+		.footer-mobile {
+			&-social-media, p {
+				font-size: 1rem;
+			}
+		}
+		&-links,
+		&-time {
+			font-size: 1rem;
+		}
 	}
 }
 
