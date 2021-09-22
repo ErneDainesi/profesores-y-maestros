@@ -1,7 +1,21 @@
 #opinions {
 	.carousel {
 		.carousel-inner {
-			text-align: center;
+			text-align: left;
+			padding: 5rem 10rem;
+			.carousel-item {
+				.opinions-quote {
+					font-size: 1.5rem;
+					.blockquote-footer {
+						margin-top: 2rem;
+						text-align: center;
+					}
+					p {
+						opacity: .8;
+						margin-bottom: 1rem;
+					}
+				}
+			}
 		}
 	}
 }
@@ -14,15 +28,24 @@
 	#opinions {
 		.carousel {
 			.carousel-inner {
-				padding: 2rem 0;
+				padding: 2rem 1rem;
 				.carousel-item {
 					.opinions-quote {
-						p {
-							opacity: .8;
-							margin-bottom: 1rem;
-						}
+						padding: 0 1rem;
+						font-size: 1.3rem;
+
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	#opinions {
+		.carousel {
+			.carousel-inner {
+				padding: 5rem 15rem;
 			}
 		}
 	}

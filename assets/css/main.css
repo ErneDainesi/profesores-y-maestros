@@ -537,7 +537,19 @@ section {
   }
 }
 #opinions .carousel .carousel-inner {
+  text-align: left;
+  padding: 5rem 10rem;
+}
+#opinions .carousel .carousel-inner .carousel-item .opinions-quote {
+  font-size: 1.5rem;
+}
+#opinions .carousel .carousel-inner .carousel-item .opinions-quote .blockquote-footer {
+  margin-top: 2rem;
   text-align: center;
+}
+#opinions .carousel .carousel-inner .carousel-item .opinions-quote p {
+  opacity: 0.8;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -547,11 +559,16 @@ section {
   }
 
   #opinions .carousel .carousel-inner {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
-  #opinions .carousel .carousel-inner .carousel-item .opinions-quote p {
-    opacity: 0.8;
-    margin-bottom: 1rem;
+  #opinions .carousel .carousel-inner .carousel-item .opinions-quote {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #opinions .carousel .carousel-inner {
+    padding: 5rem 15rem;
   }
 }
 #contact {
