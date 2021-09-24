@@ -575,6 +575,12 @@ section {
     border-radius: 50%;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1505px) {
+  #about-us .teacher-container .teacher-info-text {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+}
 #opinions .carousel {
   max-width: 80%;
   margin: 0 auto;
