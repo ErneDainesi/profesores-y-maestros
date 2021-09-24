@@ -136,7 +136,7 @@ section {
 .footer {
   background-image: url("../images/footer-bg.svg");
   background-repeat: no-repeat;
-  background-size: 60rem;
+  background-size: 58.5rem;
   background-position: top center;
   margin-top: 2rem;
   height: 50vh;
@@ -225,7 +225,7 @@ section {
 
 @media screen and (min-width: 768px) and (max-width: 993px) {
   .footer {
-    background-size: 80rem;
+    background-size: 82.5rem;
   }
   .footer .footer-mobile-social-media, .footer .footer-mobile p {
     font-size: 1rem;
@@ -305,6 +305,29 @@ section {
 @media screen and (min-width: 1800px) {
   .footer {
     background-size: 140rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .footer {
+    background-size: 45rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .footer {
+    background-size: 150rem;
+    height: 55vh;
+  }
+  .footer-links a, .footer-time p {
+    font-size: 1.3rem;
+  }
+  .footer .footer-mobile-social-media p {
+    font-size: 2rem;
+  }
+  .footer .footer-mobile-social-media .social-media-links .social-media-link {
+    font-size: 2rem;
+  }
+  .footer .footer-mobile-contact {
+    font-size: 1.3rem;
   }
 }
 #home {
