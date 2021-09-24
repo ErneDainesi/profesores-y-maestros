@@ -536,6 +536,10 @@ section {
     border-radius: 50%;
   }
 }
+#opinions .carousel {
+  max-width: 80%;
+  margin: 0 auto;
+}
 #opinions .carousel .carousel-inner {
   text-align: left;
   padding: 5rem 10rem;
@@ -550,6 +554,39 @@ section {
 #opinions .carousel .carousel-inner .carousel-item .opinions-quote p {
   opacity: 0.8;
   margin-bottom: 1rem;
+}
+
+#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon,
+#carouselExampleDark > button.carousel-control-prev > span.carousel-control-prev-icon {
+  background-image: none;
+}
+
+#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon {
+  filter: none;
+}
+#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon i {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #051477, #040BCF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 100%;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #051477;
+}
+
+#carouselExampleDark > button.carousel-control-next,
+#carouselExampleDark > button.carousel-control-prev {
+  filter: none;
+  opacity: 1;
 }
 
 @media screen and (max-width: 992px) {

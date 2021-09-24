@@ -1,5 +1,9 @@
+@use '../abstracts/' as *;
+
 #opinions {
 	.carousel {
+		max-width: 80%;
+		margin: 0 auto;
 		.carousel-inner {
 			text-align: left;
 			padding: 5rem 10rem;
@@ -19,6 +23,41 @@
 		}
 	}
 }
+
+#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon,
+#carouselExampleDark > button.carousel-control-prev > span.carousel-control-prev-icon {
+	background-image: none;
+}
+
+
+#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon {
+	filter: none;
+	i {
+		font-size: 4rem;
+		background: $blue-btn-gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 10px;
+	height: 10px;
+	margin-right: 6px;
+	margin-left: 6px;
+	border-radius: 100%;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+	background-color: $blue-600;
+}
+
+#carouselExampleDark > button.carousel-control-next,
+#carouselExampleDark > button.carousel-control-prev {
+	filter: none;
+	opacity: 1;
+}
+
 
 @media screen and (max-width: 992px) {
 	#carouselExampleDark > button.carousel-control-next > span.carousel-control-next-icon,
