@@ -1,7 +1,8 @@
+$blue-600: #051477;
 $blue-500: #023E8A;
 $blue-400: #0077B6;
 $blue-300: #0096C7;
 $blue-200: #00b4D8;
 $blue-100: #48CAE4;
 $white:    #F6F8FF;
-$blue-btn-gradient: linear-gradient(90deg, #051477, #040BCF);
+$blue-btn-gradient: linear-gradient(90deg, $blue-600, #040BCF);
