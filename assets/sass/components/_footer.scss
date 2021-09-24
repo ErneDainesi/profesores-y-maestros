@@ -115,6 +115,7 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
+		height: 55vh;
 		.footer-mobile {
 			display: none;
 		}
@@ -137,7 +138,7 @@
 		.social-media-links {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
 			width: 100%;
 			.social-media-link {
@@ -196,7 +197,6 @@
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
 	.footer {
 		background-size: 150rem;
-		height: 55vh;
 		&-links a,
 		&-time p {
 			font-size: 1.3rem;
