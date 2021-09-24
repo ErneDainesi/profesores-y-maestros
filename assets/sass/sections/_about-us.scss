@@ -7,6 +7,8 @@
 	}
 	.teacher-container {
 		.teacher-info {
+			max-width: 85%;
+			margin: 0 auto;
 			&-img {
 				margin: 1rem 0;
 				box-shadow: 0 5px 15px gray;
@@ -26,21 +28,37 @@
 	}
 }
 
+@media screen and (min-width: 769px) and (max-width: 993px) {
+	#about-us {
+		.teacher-container {
+			.teacher-info {
+				&-img {
+					width: 30%;
+				}
+				&-text {
+					margin: 0 auto;
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 993px) {
 	#about-us {
 		.teacher-container {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			// flex-direction: row;
-			// align-items: center;
-			// justify-content: space-around;
 			.teacher-info {
+				width: 100%;
+				margin: 0;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				&-text {
 					max-width: 50%;
 					font-size: 1.3rem;
+					padding: 0;
 				}
 				&-img {
 						border-radius: 50%;
