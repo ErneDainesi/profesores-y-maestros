@@ -192,9 +192,6 @@ section {
 .footer .footer-contact {
   display: none;
 }
-.footer .footer-links {
-  margin: 0 1rem;
-}
 .footer .footer-links a {
   margin: 0.5rem 0;
 }
@@ -210,8 +207,12 @@ section {
   bottom: 0;
   margin: 0 1rem;
 }
+.footer .footer-links {
+  margin-top: 1rem;
+}
 .footer .footer-time {
   white-space: nowrap;
+  margin-bottom: 6rem;
 }
 .footer .footer-time h4 {
   margin-top: 2rem;
@@ -278,6 +279,7 @@ section {
     font-size: 1rem;
   }
   .footer .footer-time {
+    margin-top: 5rem;
     font-size: 1rem;
   }
   .footer .footer-contact {
@@ -290,8 +292,7 @@ section {
     margin-bottom: 1rem;
   }
   .footer .footer-social-media,
-.footer .footer-links,
-.footer .footer-time {
+.footer .footer-links {
     margin-top: 8rem;
   }
   .footer .footer-contact {
